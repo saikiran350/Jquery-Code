@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Jquery Effects</title>
+</head>
+<body>
+Enter your text here <input type="text" name="client_msg">
+<input type="button" value="Add" id="add">
+<div id="client_disp_messgaes"></div>
+</body>
+<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script>
+	$(document).ready(function(){
+	//alert('ramma');
+		$('#add').click(function(){
+			var clint_ggg = $("input[name=client_msg]").val();
+			alert(clint_ggg);
+			$('#client_disp_messgaes').append("<div>"+clint_ggg+"</div>");
+		});
+	});
+
+
+</script>
+
+</html>
